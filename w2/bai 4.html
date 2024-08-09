@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Project</title>
+    <link rel="stylesheet" href="bai 3.css">
+</head>
+<body>
+    <div class="container">
+        <div class="create-project-box">
+            <h2>Create project</h2>
+            <p>Deploy your new project in one-click.</p>
+            <form>
+                <label for="project-name">Name</label>
+                <input type="text" id="project-name" name="project-name" placeholder="Name of your project">
+
+                <label for="framework">Framework</label>
+                <select id="framework" name="framework">
+                    <option value="" disabled selected>Select</option>
+                    <option value="framework1">Framework 1</option>
+                    <option value="framework2">Framework 2</option>
+                    <option value="framework3">Framework 3</option>
+                    <option value="framework4">Framework 4</option>
+                </select>
+
+                <div class="buttons">
+                    <button type="button" class="cancel-button">Cancel</button>
+                    <button type="submit" class="deploy-button">Deploy</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
