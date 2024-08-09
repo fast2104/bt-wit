@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Create Project</title>
-    <link rel="stylesheet" href="bai 3.css">
+    <link rel="stylesheet" href="bai 4.css">
 </head>
 <body>
     <div class="container">
@@ -18,10 +18,10 @@
                 <label for="framework">Framework</label>
                 <select id="framework" name="framework">
                     <option value="" disabled selected>Select</option>
-                    <option value="framework1">Framework 1</option>
-                    <option value="framework2">Framework 2</option>
-                    <option value="framework3">Framework 3</option>
-                    <option value="framework4">Framework 4</option>
+                    <option value="A">Framework 1</option>
+                    <option value="B">Framework 2</option>
+                    <option value="C">Framework 3</option>
+                    <option value="D">Framework 4</option>
                 </select>
 
                 <div class="buttons">
@@ -33,3 +33,85 @@
     </div>
 </body>
 </html>
+
+body {
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.create-project-box {
+    background-color: #1E1E1E;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+    width: 300px;
+    text-align: center;
+}
+
+.create-project-box h2 {
+    margin-bottom: 10px;
+}
+
+.create-project-box p {
+    margin-bottom: 20px;
+    color: #bbb;
+}
+
+.create-project-box form {
+    display: flex;
+    flex-direction: column;
+}
+
+.create-project-box label {
+    text-align: left;
+    margin-bottom: 5px;
+}
+
+.create-project-box input[type="text"], 
+.create-project-box select {
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border: 1px black;
+    background-color: black;
+    color: white;
+}
+
+.create-project-box select {
+    appearance: none;
+    background-repeat: no-repeat;
+    background-position: right 10px center;
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-between;
+}
+
+.cancel-button, .deploy-button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.cancel-button {
+    background-color: black;
+    color: white;
+}
+
+.deploy-button {
+    background-color: white;
+    color: black;
+}
